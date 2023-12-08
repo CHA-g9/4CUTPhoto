@@ -1,0 +1,104 @@
+/* 이서윤체 폰트 적용을 위한 코드 */
+@font-face {
+  font-family: "LeeSeoyun";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* body태그 자체에 css 요소 부여 */
+body {
+    font-family: "LeeSeoyun";
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url("./background.png");
+}
+.container {
+    height: 100%;
+    width: 390px;
+    background-color: palevioletred;
+}
+#mainTitle {
+    text-align: center;
+    color: whitesmoke;
+}
+.photos {
+    margin-top : 30px;
+}
+.photoFrame {
+    background-color: whitesmoke;
+    background-size: cover;
+    margin: 15px 20px;
+    height: 300px;
+    position: relative;
+    align-content: center;
+    cursor: pointer; 
+}
+#image1 {
+    background-image: url("./Wish (1).jpg");
+}
+
+#image2 {
+    background-image: url("./Wish (2).jpg");
+}
+
+#image3 {
+    background-image: url("./Wish (3).jpg");
+}
+
+#image4 {
+    background-image: url("./Wish (4).jpg");
+}
+
+.video {
+    height: 300px;
+    width: 100%;
+}
+
+.photoDescription {
+    color: whitesmoke;
+    background-color: black;
+    width: fit-content;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    /* 경계선 */
+    border-radius: 10px;
+
+    position : absolute;
+    bottom: 0;
+    transform: translate(-50%);
+    left: 50%;
+
+    opacity: 0;
+}
+.footer {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.f-title {
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    color: whitesmoke;
+}
+#f-date {
+    font-size: 15px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.showText {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.hideText {
+    opacity: 0;
+}
+
+.buttons {
+    align-content: center;
+}
